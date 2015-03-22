@@ -6,15 +6,47 @@
 </description>
     <link>http://darkslategrey.github.io/</link>
     <atom:link href="http://darkslategrey.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 21 Mar 2015 15:25:24 +0000</pubDate>
-    <lastBuildDate>Sat, 21 Mar 2015 15:25:24 +0000</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Sun, 22 Mar 2015 21:59:48 +0000</pubDate>
+    <lastBuildDate>Sun, 22 Mar 2015 21:59:48 +0000</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Hexagonale architecture</title>
+        <description>&lt;p&gt;C’est un sujet que j’aborde récemment.&lt;/p&gt;
+
+&lt;p&gt;Une demande d’évoultion sur un projet que j’ai écrit recemment m’a ammené à réfléchir à
+une architecture plus modulaire. 
+C’est naturelleemnt que j’en suis venu à m’interesser aux messages.
+Ainsi le protocole pubsub m’a paru être adéquat.
+Après avoir programmé pendant quelques années sur le principe de de
+demandé à faire quelque chose à mes objets, procédures, fonctions. 
+Le pasage à une conception basée sur les messages n’est pas facile.
+Mais l’effort en vaux la peine. On se propulse d’un coup dans une
+nouvelle façon de designer ses apps.&lt;/p&gt;
+
+&lt;p&gt;Je m’avance peut être car je n’ai pas vraimeent creusé ce qui se cache
+derrière &lt;em&gt;les micros services&lt;/em&gt;. Mais de ce j’en sais ils s’inscrivent
+dans ce mouvement (perpetuel ?) d’architecture distribuée
+Certains_&lt;/p&gt;
+
+&lt;p&gt;Un nom + un moment + un contenu + un emeteur + un/des recepteurs + un média&lt;/p&gt;
+
+&lt;p&gt;J’ai croisé les micros services, la programmation par envoi de messages&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Mar 2015 12:01:04 +0000</pubDate>
+        <link>http://darkslategrey.github.io/softwarese/2015/03/21/hexagonale-architecture.html</link>
+        <guid isPermaLink="true">http://darkslategrey.github.io/softwarese/2015/03/21/hexagonale-architecture.html</guid>
+        
+        
+        <category>softwarese</category>
+        
+      </item>
     
       <item>
         <title>Le choix de langue</title>
         <description>&lt;p&gt;C’est un processus interessant celui du choix de la langue  par un
 locuteur multilingue. Le contexte, l’état interne ? Quels mécanismes
-sont en jeu ? Ce qui est sur, c’est qu’il veut être compris. &lt;/p&gt;
+sont en jeu ? Ce qui est sur, c’est qu’il veut être compris.&lt;/p&gt;
 
 &lt;p&gt;Il lui faut donc se construire (se reconstruire ?) une
 représentation du monde qui lui semble la plus proche de celle qu’il
