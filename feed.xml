@@ -1,34 +1,24 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>darkslategrey thougths</title>
-    <description>Simple thoughts
-</description>
-    <link>http://darkslategrey.github.io/</link>
-    <atom:link href="http://darkslategrey.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 23 Mar 2015 08:47:02 +0000</pubDate>
-    <lastBuildDate>Mon, 23 Mar 2015 08:47:02 +0000</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
-    
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+    {% for post in site.posts limit:20 %}
       <item>
-        <title>Le choix de langue</title>
-        <description>&lt;p&gt;C’est un processus interessant celui du choix de la langue  par un
-locuteur multilingue. Le contexte, l’état interne ? Quels mécanismes
-sont en jeu ? Ce qui est sur, c’est qu’il veut être compris.&lt;/p&gt;
-
-&lt;p&gt;Il lui faut donc se construire (se reconstruire ?) une
-représentation du monde qui lui semble la plus proche de celle qu’il
-se fait que son interlocuteur a.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 21 Mar 2015 12:01:04 +0000</pubDate>
-        <link>http://darkslategrey.github.io/multilinguisme/2015/03/21/choosing-a-tongue.html</link>
-        <guid isPermaLink="true">http://darkslategrey.github.io/multilinguisme/2015/03/21/choosing-a-tongue.html</guid>
-        
-        
-        <category>multilinguisme</category>
-        
+        <title>{{ post.title | xml_escape }}</title>
+        <description>
+          {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
+          {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
+        </description>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ site.url }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
       </item>
-    
+    {% endfor %}
   </channel>
 </rss>
